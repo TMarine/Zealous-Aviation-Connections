@@ -1,0 +1,629 @@
+@font-face {
+    font-family: 'Metropolis-Regular';
+    src: url('../fonts/Metropolis-Regular/Metropolis-Regular.eot');
+    src: url('../fonts/Metropolis-Regular/Metropolis-Regular.eot') format('embedded-opentype'),
+    url('../fonts/Metropolis-Regular/Metropolis-Regular.woff') format('woff'),
+    url('../fonts/Metropolis-Regular/Metropolis-Regular.ttf') format('truetype'),
+    url('../fonts/Metropolis-Regular/Metropolis-Regular.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Metropolis-RegularItalic';
+    src: url('../fonts/Metropolis-RegularItalic/Metropolis-RegularItalic.eot');
+    src: url('../fonts/Metropolis-RegularItalic/Metropolis-RegularItalic.eot') format('embedded-opentype'),
+    url('../fonts/Metropolis-RegularItalic/Metropolis-RegularItalic.woff') format('woff'),
+    url('../fonts/Metropolis-RegularItalic/Metropolis-RegularItalic.ttf') format('truetype'),
+    url('../fonts/Metropolis-RegularItalic/Metropolis-RegularItalic.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'SFProDisplay-Regular';
+    src: url('../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot');
+    src: url('../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot') format('embedded-opentype'),
+    url('../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff') format('woff'),
+    url('../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf') format('truetype'),
+    url('../fonts/SFProDisplay-Regular/SFProDisplay-Regular.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Metropolis-Bold';
+    src: url('../fonts/Metropolis-Bold/Metropolis-Bold.eot');
+    src: url('../fonts/Metropolis-Bold/Metropolis-Bold.eot') format('embedded-opentype'),
+    url('../fonts/Metropolis-Bold/Metropolis-Bold.woff') format('woff'),
+    url('../fonts/Metropolis-Bold/Metropolis-Bold.ttf') format('truetype'),
+    url('../fonts/Metropolis-Bold/Metropolis-Bold.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fontawesome';
+    src: url('../fonts/Font-Awesome/fontawesome-webfont.eot');
+    src: url('../fonts/Font-Awesome/fontawesome-webfont.eot') format('embedded-opentype'),
+    url('../fonts/Font-Awesome/fontawesome-webfont.woff') format('woff'),
+    url('../fonts/Font-Awesome/fontawesome-webfont.ttf') format('truetype'),
+    url('../fonts/Font-Awesome/fontawesome-webfont.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Metropolis-Regular';
+    font-size: 14px;
+}
+/*********************************************************header css***********************************************************/
+header {
+    background: #01717F;
+    height: 92px;
+    display: flex;
+    align-items: center;
+}
+header #collapsingNavbar a{
+    color:#fff;
+    margin:0 10px;
+}
+header #collapsingNavbar a.active , header #collapsingNavbar a:hover{
+    color: #FFC700;
+}
+header  .navbar {
+    padding: 0;
+}
+input:focus{
+    outline: none;
+}
+.search-banner {
+    position: relative;
+    height: 38px;
+    width: 260px;
+    margin-left: 60px;
+}
+.search-btn{
+    background: #68DACC;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: -15px;
+    border: 5px solid #01717f;
+}
+.search-banner input {
+    padding-left:10px;
+    height: 100%;
+    width: 100%;
+}
+.search-btn .fa{
+    color: #494949;
+}
+/*********************************************************header end***********************************************************/
+/*********************************************************middle-section start*************************************************/
+.middle-section {
+
+    position: relative;
+    padding: 40px 0;
+}
+.middle-container-bg {
+    position: relative;
+    background: url(../images/bg.svg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: 100%;
+}
+.middle-container-inner {
+    position: relative;
+    background: #fff;
+    max-width: 1070px;
+    left: 0;
+    right: 0;
+    color: #232323;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: -700px auto 0;
+    z-index: 3;
+}
+.pilot-details-title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.pilot-details{
+    display: flex;
+    background-color: #232323;
+}
+.pilot-description-banner {
+    padding: 25px 30px 20px 44px;
+    background: #232323;
+    color: #fff;
+}
+.pilot-description {
+    font-size: 13px;
+    line-height: 26px;
+    margin-top: 25px;
+}
+.social-list{
+    float: right;
+    margin-top: 30px;
+}
+.social-list a{
+    margin:0 5px
+}
+.pilot-location-banner p{
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Metropolis-Bold';
+    color: #222426;
+}
+
+
+.rate-banner{
+    position: absolute;
+    right: 25px;
+    font-size: 10px;
+}
+.rate-banner-inner{
+    display: flex;
+}
+.rating {
+    border: none;
+    margin-left: 10px;
+    float: left;
+}
+.rating p{
+    font-size: 16px;
+    padding-left: 3px;
+    font-family: 'Metropolis-Bold';
+    line-height: 16px;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f005";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FF8A00;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FF8A00;  }
+.pilot-panel{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+.pilot-name{
+    color: #222426;
+    font-size: 32px;
+    font-family: 'Metropolis-Bold';
+}
+.pilot-age{
+    color: #01717F;
+    font-size: 16px;
+    font-family: 'Metropolis-Bold';
+}
+
+.pilot-info-banner {
+    display: flex;
+    padding: 0 30px 0px;
+    justify-content: space-between;
+    margin: 0;
+}
+h2.main-title {
+    color: #383838;
+    font-size: 21px;
+    font-family: 'Metropolis-Bold';
+    margin-bottom: 10px;
+}
+.pilot-info-banner-left {
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+}
+.pilot-info-banner-right {
+    padding: 50px 0;
+    width: 52%;
+    position: relative;
+}
+.pilot-info-banner-right:after {
+    content: '';
+    background: url(../images/border-bg.svg) no-repeat right bottom;
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    left: -45px;
+    display: block;
+    top: 0;
+}
+.pilot-info-banner-left p {
+    width: 200px;
+    line-height: 23px;
+    font-size: 15px;
+}
+.pilot-info-banner-left  img{
+    margin-right:20px;
+}
+.info-type-list {
+    float: left;
+    list-style: disc;
+    width: 46%;
+    color: #3D3D3D;
+    margin-left: 16px;
+}
+.info-type-list li {
+    line-height: 20px;
+}
+
+
+/*********************************************pilot-career-banner**********************************************/
+.pilot-career-banner {
+    border-top: 1px solid #eee;
+    padding:15px 0 0 30px;
+    position: relative;
+    font-size: 15px;
+    line-height: 22px;
+    color: #343434;
+    width: 100%;
+}
+.pilot-career-banner-left p {
+    font-family: 'Metropolis-RegularItalic';
+}
+
+.pilot-career-banner-right a:before{
+    content: '';
+    height: 36px;
+    width: 42px;
+    display: block;
+    background-size: 22px;
+}
+.message-icon:before {
+    background: url(../images/deco-item2.png) no-repeat  0 10px;
+
+}
+.req-icon:before {
+    background: url(../images/deco-item3.png) no-repeat  0 10px;
+}
+.pilot-career-banner-right a {
+    width: 100px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    /* padding-left: 32px; */
+    align-items: center;
+    margin-right: 20px;
+}
+.pilot-career-banner-left p {
+    width: 70%;
+    padding-bottom: 20px;
+}
+/**********************************************end****************************************/
+/*****************************************connect-pilot-container***************************/
+.connect-pilot-container{
+    display: flex;
+}
+.connect-pilot-left-banner{
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.62);
+    border-radius: 6px;
+}
+.current-pilot-details{
+    display: flex;
+}
+.current-pilot-details-left {
+    margin: 25px;
+}
+.current-pilot-name {
+    font-size: 18px;
+    line-height: 21px;
+    color: #323232;
+    font-family: 'SFProDisplay-Regular';
+    font-weight: bold;
+    margin-bottom:10px;
+}
+.current-pilot-description{
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'SFProDisplay-Regular';
+    font-size: 14px;
+}
+.current-pilot-location {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'SFProDisplay-Regular';
+    color: #01717F;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.current-pilot-details-left .social-list {
+    float: left;
+    margin-top: 15px;
+}
+.pilot-career-banner-right {
+    background: url(../images/decoration.svg) no-repeat right bottom;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-size: 100%;
+    display: flex;
+    padding:48px 20px  0 110px;
+    color: #fff;
+}
+/*********************************connect-pilot-container-end************************************/
+
+/*********************************footer start*******************************/
+footer {
+    background: #01717F;
+    padding: 65px 0 0;
+    margin-top: 100px;
+}
+.footer{
+    display: flex;
+    padding-bottom: 50px;
+}
+.footer-left {
+    width: 65%;
+
+}
+.footer-left-inner{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.footer-title{
+    color: #fff;
+    font-family: 'Metropolis-Bold';
+    font-size: 25px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-left a{
+    color: #fff;
+    font-size: 15px;
+    line-height: 27px;
+    display: block;
+}
+.copyright{
+    margin-top: 50px;
+    color: #818181;
+}
+button:focus {
+    outline: none;
+}
+.footer-right-info {
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.footer-input {
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+.footer-input img {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+.footer-right{
+    width: 30%;
+}
+.footer-input input{
+    border:none;
+    height: 100%;
+    width: 100%;
+    padding: 0 11px;
+    border-radius: 3px;
+}
+.footer-line{
+    background: #4D757A;
+    padding: 22px;
+    text-align: center;
+}
+.footer-line a{
+    color: #fff;
+    font-size: 13px;
+    margin: 0 10px;
+    line-height: 20px;
+}
+/*********************************footer end*******************************/
+/*********************************media start******************************/
+
+@media (min-width: 768px){
+
+    .navbar-expand-md .navbar-collapse {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    .container {
+        max-width: 1400px;
+    }
+}
+@media (max-width: 1200px) {
+    .search-banner {
+        width: 26%;
+        margin-left: 0;
+    }
+}
+@media (max-width: 991px) {
+    .container.header-inner {
+        max-width: 100%;
+    }
+    .search-banner
+    {
+        margin-left: 50px;
+    }
+    .footer-left {
+        width: 100%;
+    }
+    .pilot-details>img{
+        width: 26%;
+    }
+
+    .pilot-career-banner-left p {
+        width: 100%;
+        padding-bottom: 76px;
+    }
+    .pilot-description-banner {
+        padding: 40px;
+        overflow: hidden;
+    }
+    .pilot-info-banner-left {
+        justify-content: center;
+    }
+    .footer {
+        display: block;
+    }
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer-left-inner {
+        display: block;
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+    }
+   .navbar-toggler{
+       background: url(../images/hamburger-btn.svg) no-repeat
+   }
+    .navbar-brand {
+        margin-right: 0;
+        width: 60px;
+    }
+    .navbar-brand img{
+        width: 100%;
+    }
+
+    header .navbar {
+        padding: 16px;
+    }
+}
+@media (max-width: 890px){
+    header #collapsingNavbar a {
+        font-size: 12px;
+        margin:5px;
+    }
+}
+@media (max-width: 767px){
+    footer {
+        padding: 40px 0 0;
+        margin-top: 50px;
+    }
+    .pilot-info-banner-left {
+        padding: 25px 0;
+    }
+    .pilot-details>img {
+        width: 40%;
+    }
+    .pilot-panel {
+        padding: 16px;
+    }
+    .pilot-career-banner {
+        padding: 15px 0 0 16px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .navbar-toggler {
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+    .search-banner {
+        margin: 0 50px 0 0;
+        width: 50%;
+    }
+    .info-type-list {
+         float: none;
+        padding: 0 16px 0px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .pilot-info-banner-right {
+        padding: 10px 0;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .pilot-info-banner {
+        display: block;
+    }
+    .pilot-details {
+      display: block;
+        position: relative;
+    }
+    .pilot-description {
+        margin-top: 4px;
+    }
+    .pilot-description-banner {
+        padding: 16px;
+    }
+    .rate-banner {
+        top: 33px;
+    }
+    .navbar-brand {
+        margin-right: 0;
+        width: 100px;
+    }
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+    .middle-section-inner h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    header .navbar {
+        padding: 0 16px;
+        position: relative;
+        width: 100%;
+    }
+    header #collapsingNavbar a {
+        display: block;
+        margin: 20px 0;
+    }
+    header .navbar-collapse {
+        display: block;
+    }
+    .navbar-dark .navbar-toggler {
+        right: 0;
+        border: 1px solid #fff;
+        border-radius: 41px;
+        padding: 4px;
+    }
+    .container.header-inner {
+        max-width: 100%;
+        padding: 0;
+    }
+
+
+}
