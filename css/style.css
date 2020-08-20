@@ -277,13 +277,13 @@ h2.main-title {
     margin-bottom: 10px;
 }
 
-.pilot-info-banner-left {
+.pilot-info-right {
     display: flex;
     padding: 50px 0;
     align-items: center;
 }
 
-.pilot-info-banner-right {
+.pilot-info-left {
     padding: 50px 0;
     width: 65%;
     position: relative;
@@ -291,11 +291,11 @@ h2.main-title {
     justify-content: space-between;
 }
 
-.pilot-info-banner-right > div {
+.pilot-info-left > div {
     width: 80%;
 }
 
-.pilot-info-banner-right:before {
+.pilot-info-left:before {
     content: '';
     background: url(../images/border-bg.svg) no-repeat right bottom;
     height: 100%;
@@ -306,13 +306,13 @@ h2.main-title {
     top: 0;
 }
 
-.pilot-info-banner-left p {
+.pilot-info-right p {
     width: 200px;
     line-height: 23px;
     font-size: 15px;
 }
 
-.pilot-info-banner-left img {
+.pilot-info-right img {
     margin-right: 20px;
 }
 
@@ -382,20 +382,20 @@ h2.main-title {
 .connect-pilot-container {
     display: flex;
 }
-
-.connect-pilot-left-banner {
+.connect-pilot-container{
+    margin-top:80px;
+}
+.current-pilot-details {
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.62);
     border-radius: 6px;
-}
-
-.current-pilot-details {
+    position: relative;
+    width: 90%;
+    margin-bottom:40px;
     display: flex;
 }
-
 .current-pilot-details-left {
-    margin: 25px;
+    margin: 20px 25px;
 }
-
 .current-pilot-name {
     font-size: 18px;
     line-height: 21px;
@@ -404,40 +404,76 @@ h2.main-title {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
+.connect-pilot-container .pilot-career-banner-right {
+    /* background-size: 89%; */
+    padding: 0 0 0 70px;
+}
 .current-pilot-description {
     font-style: normal;
     font-weight: normal;
     font-family: 'SFProDisplay-Regular';
     font-size: 14px;
+    line-height: 24px;
 }
-
-.current-pilot-location {
+.connect-pilot-container .pilot-career-banner-right a {
+    width: 100%;
+}
+ .current-pilot-location {
     font-size: 16px;
     line-height: 19px;
     font-family: 'SFProDisplay-Regular';
     color: #01717F;
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .current-pilot-details-left .social-list {
     float: left;
     margin-top: 15px;
 }
-
+.connect-pilot-container .pilot-career-banner-right a:before {
+    content: '';
+    height: 47px;
+    width: 28px;
+    display: block;
+    background-size: 22px;
+    margin-right: 0;
+}
+.pilot-career-banner-right a {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 35%;
+    padding-left: 15px;
+}
+.finger-icon:before {
+    background: url(../images/finger.png) no-repeat 0 10px;
+}
 .pilot-career-banner-right {
     background: url(../images/decoration.svg) no-repeat right bottom;
-    height: 100px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     background-size: 100%;
     display: flex;
-    padding: 48px 20px 0 110px;
+    padding: 10px 0px 15px 60px;
     color: #fff;
+    justify-content: flex-end;
+    /* height: 60px; */
 }
-
+.c-pilot--title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    color: #01717F;
+    margin-bottom: 40px;
+}
+.c-pilot-description {
+    font-size: 24px;
+    line-height: 32px;
+    color: #515151;
+    margin-bottom: 40px;
+}
 /*********************************connect-pilot-container-end************************************/
 
 /*********************************footer start*******************************/
@@ -555,15 +591,40 @@ button:focus {
         width: 26%;
         margin-left: 0;
     }
+    .connect-pilot-container {
+        margin-top:50px;
+        max-width: 100%;
+    }
+    .current-pilot-details {
+        width: 95%;
+    }
+    .current-pilot-details-left {
+        margin: 10px;
+    }
+    .c-pilot-description {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .c-pilot--title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 14px;
+    }
 }
 
 @media (max-width: 1024px) {
-    .pilot-info-banner-right:before {
+    .pilot-info-left:before {
         display: none;
     }
 }
 
 @media (max-width: 991px) {
+    .connect-pilot-container-right  .c-pilot--title , .c-pilot-description  {
+        text-align:left !important;
+    }
+    .connect-pilot-container {
+        display: block;
+    }
     .container.header-inner {
         max-width: 100%;
     }
@@ -590,7 +651,7 @@ button:focus {
         overflow: hidden;
     }
 
-    .pilot-info-banner-left {
+    .pilot-info-right {
         justify-content: center;
     }
 
@@ -637,12 +698,20 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+    .current-pilot-details {
+        width: 100%;
+        display: block;
+    }
+    .current-pilot-details-left {
+        margin: 10px;
+        padding-bottom: 45px;
+    }
     footer {
         padding: 40px 0 0;
         margin-top: 50px;
     }
 
-    .pilot-info-banner-left {
+    .pilot-info-right {
         padding: 25px 0;
     }
 
@@ -678,7 +747,7 @@ button:focus {
         margin: 0 auto;
     }
 
-    .pilot-info-banner-right {
+    .pilot-info-left {
         padding: 10px 0;
         width: 100%;
         position: relative;
@@ -698,7 +767,7 @@ button:focus {
     .pilot-description {
         margin-top: 4px;
     }
-    .pilot-info-banner-left {
+    .pilot-info-right {
         justify-content: left;
     }
     .pilot-description-banner {

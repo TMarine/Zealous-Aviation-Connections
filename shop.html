@@ -23,8 +23,12 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="search-banner">
+                    <input type="text" placeholder="Search..." />
+                    <button type="button" class="search-btn"><i class="fa  fa-search"></i></button>
+                </div>
                 <div class="navbar-collapse collapse" id="collapsingNavbar">
-                    <a href="shop.html" class="active">
+                    <a href="home.html" class="active">
                         Shop
                     </a>
                     <a href="connect-with-pilots.html">
@@ -61,8 +65,8 @@
             </div>
         </div>
         <div class="pilot-details">
-            <div class="col-lg-5 col-md-3"> <img src="images/pilot-icon.svg" alt="icon" class="img-fluid"> </div>
-            <div class="pilot-description-banner  col-md-8 col-lg-7">
+            <img src="images/pilot-icon.svg" alt="icon" class="img-fluid">
+            <div class="pilot-description-banner">
                 <div class="rate-banner">
                     <div class="rate-banner-inner">
                         <img src="images/deco-item1.svg" alt="icon">
@@ -120,8 +124,35 @@
             </div>
         </div>
         <div class="pilot-info-banner row">
-            <div class="pilot-info-banner-left">
-                <img src="images/wine-item.svg" alt="icon">
+            <div class="pilot-info-left">
+                <div>
+                    <h2 class="main-title">Certificate Type:</h2>
+                    <ul class="info-type-list">
+                        <li>
+                            SPORT PILOT
+                        </li>
+                        <li>
+                            FLIGHT INSTRUCTOR
+                        </li>
+                        <li>
+                            AIRLINE TRANSPORT PILOT
+                        </li>
+                    </ul>
+                    <ul class="info-type-list">
+                        <li>
+                            COMMERCIAL PILOT
+                        </li>
+                        <li>
+                            FLIGHT INSTRUCTOR
+                        </li>
+                        <li>
+                            AIRLINE TRANSPORT PILOT
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pilot-info-right">
+                <img src="images/icon1.png" alt="icon">
                 <div>
                     <h2 class="main-title">
                         Pilot licence:
@@ -130,34 +161,6 @@
                         Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                     </p>
                 </div>
-            </div>
-<!--            <div class="separate">-->
-<!--                <img src="images/border-bg.svg" alt="icon">-->
-<!--            </div>-->
-            <div class="pilot-info-banner-right">
-                <h2 class="main-title">Certificate Type:</h2>
-                <ul class="info-type-list">
-                    <li>
-                        SPORT PILOT
-                    </li>
-                    <li>
-                        FLIGHT INSTRUCTOR
-                    </li>
-                    <li>
-                        AIRLINE TRANSPORT PILOT
-                    </li>
-                </ul>
-                <ul class="info-type-list">
-                    <li>
-                        COMMERCIAL PILOT
-                    </li>
-                    <li>
-                        FLIGHT INSTRUCTOR
-                    </li>
-                    <li>
-                        AIRLINE TRANSPORT PILOT
-                    </li>
-                </ul>
             </div>
         </div>
         <div class="pilot-career-banner">
@@ -169,7 +172,7 @@
                 </p>
             </div>
             <div class="pilot-career-banner-right">
-                <a href="#" class="message-icon">
+                <a href="mailto:name@email.com" class="message-icon">
                     Send Message
                 </a>
                 <a href="#" class="req-icon">
