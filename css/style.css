@@ -328,8 +328,236 @@ h2.main-title {
     line-height: 20px;
 }
 
+/**********************************shop**********************************************************/
+.banner-logo {
+    position: absolute;
+    top: 80px;
+    left: 37%;
+}
 
-/*********************************************pilot-career-banner**********************************************/
+.shop-container {
+    display: flex;
+    margin-top: 80px;
+}
+aside a {
+    display: block;
+}
+
+.title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    color: #01717F;
+    margin-bottom: 40px;
+}
+
+aside {
+    width: 200px;
+}
+
+.shop-main-container {
+    width: calc(100% - 200px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.product-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #01717F;
+}
+
+.product-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4D4D4D;
+    width: 70%;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    color: #434343;
+    margin-top: 30px;
+
+}
+
+.product-details {
+    margin-left: 20px;
+}
+
+
+/** Custom Select **/
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.custom-select-wrapper select {
+    display: none;
+}
+
+.custom-select {
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 186.5%;
+    /* or 47px */
+
+
+    color: #DBA9A9;
+}
+
+.select-marks, .select-location-details {
+    padding: 16px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.scrolled-content {
+    height: 140px;
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+.scrolled-content::-webkit-scrollbar {
+    width: 12px;
+    background-color: #E0E0E0;
+}
+
+.custom-select-trigger {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #C52628;
+}
+
+.select2 .custom-select-trigger {
+    padding: 0 33px 0 30px;
+}
+
+.custom-select-trigger:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 9px;
+    height: 10px;
+    top: 50%;
+    right: 0;
+    margin-top: -3px;
+}
+
+.custom-select.opened .custom-select-trigger:after {
+    margin-top: 3px;
+    transform: rotate(-181deg) translateY(50%);
+}
+
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0%;
+    right: 0;
+    width: 100%;
+    z-index: 4;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+    border: 0;
+}
+
+.custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(-8px);
+    -webkit-box-shadow: 0px 10px 50px 0px rgba(43, 111, 246, 0.1);
+    box-shadow: none;
+}
+
+.option-hover:before {
+    background: #f9f9f9;
+}
+
+
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 0 22px;
+    font: 13px/1.5 "Roboto", sans-serif;
+    font-weight: 600;
+    color: #c52628;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 0.05s ease-in-out;
+}
+.custom-option:first-of-type {
+    border-radius: 4px 4px 0 0;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.custom-option:last-of-type {
+    border-bottom: 0;
+    border-radius: 0 0 4px 4px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+/** Custom Select  end**/
+
+
+.breadcrumb {
+    display: flex;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 32px 40px;
+    margin-bottom: 40px;
+}
+
+.breadcrumb a.active-breadcrumb {
+    color: #C52628;
+}
+
+.breadcrumb a {
+    margin: 0 10px;
+    color: #4D4D4D;
+    font-size: 18px;
+}
+.active-breadcrumb .fa , .breadcrumb a .fa  {
+    color: #C52628;
+}
+
+
+/*****************************************pilot-career-banner**********************************************/
 .pilot-career-banner {
     border-top: 1px solid #eee;
     padding: 15px 0 0 30px;
@@ -382,20 +610,24 @@ h2.main-title {
 .connect-pilot-container {
     display: flex;
 }
-.connect-pilot-container{
-    margin-top:80px;
+
+.connect-pilot-container {
+    margin-top: 80px;
 }
+
 .current-pilot-details {
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.62);
     border-radius: 6px;
     position: relative;
     width: 90%;
-    margin-bottom:40px;
+    margin-bottom: 40px;
     display: flex;
 }
+
 .current-pilot-details-left {
     margin: 20px 25px;
 }
+
 .current-pilot-name {
     font-size: 18px;
     line-height: 21px;
@@ -404,10 +636,12 @@ h2.main-title {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .connect-pilot-container .pilot-career-banner-right {
     /* background-size: 89%; */
     padding: 0 0 0 70px;
 }
+
 .current-pilot-description {
     font-style: normal;
     font-weight: normal;
@@ -415,10 +649,12 @@ h2.main-title {
     font-size: 14px;
     line-height: 24px;
 }
+
 .connect-pilot-container .pilot-career-banner-right a {
     width: 100%;
 }
- .current-pilot-location {
+
+.current-pilot-location {
     font-size: 16px;
     line-height: 19px;
     font-family: 'SFProDisplay-Regular';
@@ -431,6 +667,7 @@ h2.main-title {
     float: left;
     margin-top: 15px;
 }
+
 .connect-pilot-container .pilot-career-banner-right a:before {
     content: '';
     height: 47px;
@@ -439,6 +676,7 @@ h2.main-title {
     background-size: 22px;
     margin-right: 0;
 }
+
 .pilot-career-banner-right a {
     display: flex;
     align-items: center;
@@ -446,9 +684,11 @@ h2.main-title {
     width: 35%;
     padding-left: 15px;
 }
+
 .finger-icon:before {
     background: url(../images/finger.png) no-repeat 0 10px;
 }
+
 .pilot-career-banner-right {
     background: url(../images/decoration.svg) no-repeat right bottom;
     position: absolute;
@@ -461,6 +701,7 @@ h2.main-title {
     justify-content: flex-end;
     /* height: 60px; */
 }
+
 .c-pilot--title {
     font-size: 45px;
     line-height: 45px;
@@ -468,12 +709,14 @@ h2.main-title {
     color: #01717F;
     margin-bottom: 40px;
 }
+
 .c-pilot-description {
     font-size: 24px;
     line-height: 32px;
     color: #515151;
     margin-bottom: 40px;
 }
+
 /*********************************connect-pilot-container-end************************************/
 
 /*********************************footer start*******************************/
@@ -591,20 +834,25 @@ button:focus {
         width: 26%;
         margin-left: 0;
     }
+
     .connect-pilot-container {
-        margin-top:50px;
+        margin-top: 50px;
         max-width: 100%;
     }
+
     .current-pilot-details {
         width: 95%;
     }
+
     .current-pilot-details-left {
         margin: 10px;
     }
+
     .c-pilot-description {
         font-size: 17px;
         line-height: 20px;
     }
+
     .c-pilot--title {
         font-size: 30px;
         line-height: 36px;
@@ -619,12 +867,14 @@ button:focus {
 }
 
 @media (max-width: 991px) {
-    .connect-pilot-container-right  .c-pilot--title , .c-pilot-description  {
-        text-align:left !important;
+    .connect-pilot-container-right .c-pilot--title, .c-pilot-description {
+        text-align: left !important;
     }
+
     .connect-pilot-container {
         display: block;
     }
+
     .container.header-inner {
         max-width: 100%;
     }
@@ -698,14 +948,28 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+    .container.shop-container-block {
+        max-width: 100%;
+    }
+    aside {
+        width: 140px;
+    }
+    .shop-main-container {
+        width: calc(100% - 140px);
+        display: block;
+    }
     .current-pilot-details {
         width: 100%;
+        display: block;
+    }
+    .product-box {
         display: block;
     }
     .current-pilot-details-left {
         margin: 10px;
         padding-bottom: 45px;
     }
+
     footer {
         padding: 40px 0 0;
         margin-top: 50px;
@@ -767,9 +1031,11 @@ button:focus {
     .pilot-description {
         margin-top: 4px;
     }
+
     .pilot-info-right {
         justify-content: left;
     }
+
     .pilot-description-banner {
         padding: 16px;
     }

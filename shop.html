@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="wrapper home">
+<div class="wrapper shop">
     <!---------------------------------------------start header-------------------------------------->
     <header>
         <div class="header-inner container">
@@ -24,14 +24,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="search-banner">
-                    <input type="text" placeholder="Search..." />
+                    <input type="text" placeholder="Search..."/>
                     <button type="button" class="search-btn"><i class="fa  fa-search"></i></button>
                 </div>
                 <div class="navbar-collapse collapse" id="collapsingNavbar">
-                    <a href="home.html" class="active">
+                    <a href="shop.html">
                         Shop
                     </a>
-                    <a href="connect-with-pilots.html">
+                    <a href="connect-with-pilots.html" class="active">
                         Connect with pilots
                     </a>
 
@@ -51,137 +51,206 @@
     </header>
     <!---------------------------------------------end header------------------------------------------>
     <!--------------------------------------------start middle-section--------------------------------->
-    <section class="middle-container-bg"></section>
-    <div class="middle-container-inner">
-        <div class="pilot-panel">
-            <div class="pilot-generic-details">
-                <h2 class="pilot-name">Simon</h2>
-                <p class="pilot-age">AGE: <span>37</span></p>
-            </div>
+    <section class="position-relative">
+        <img src="images/shop-bg.svg" alt="shop-bg" class="img-fluid">
+        <img src="images/logo.svg" alt="logo" class="banner-logo img-fluid">
+    </section>
+    <div class="container shop-container-block">
+        <div class="breadcrumb">
+            <a href="#">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
 
-            <div class="pilot-location-banner">
-                <img src="images/location-icon.svg" alt="icon" class="d-block m-auto">
-                <p>Sydney, NSW </p>
-            </div>
+            </a>
+            <a href="home.html">
+                Home /
+            </a>
+            <a href="shop.html" class="active-breadcrumb">
+                Shop
+            </a>
         </div>
-        <div class="pilot-details">
-            <img src="images/pilot-icon.svg" alt="icon" class="img-fluid">
-            <div class="pilot-description-banner">
-                <div class="rate-banner">
-                    <div class="rate-banner-inner">
-                        <img src="images/deco-item1.svg" alt="icon">
-
-                        <fieldset class="rating">
-                            <p>Loremipsum</p>
-                            <input type="radio" id="star5" name="rating" value="5"/><label class="full" for="star5"
-                                                                                           title="Awesome - 5 stars"></label>
-                            <input type="radio" id="star4half" name="rating" value="4 and a half"/><label class="half"
-                                                                                                          for="star4half"
-                                                                                                          title="Pretty good - 4.5 stars"></label>
-                            <input type="radio" id="star4" name="rating" value="4"/><label class="full" for="star4"
-                                                                                           title="Pretty good - 4 stars"></label>
-                            <input type="radio" id="star3half" name="rating" value="3 and a half"/><label class="half"
-                                                                                                          for="star3half"
-                                                                                                          title="Meh - 3.5 stars"></label>
-                            <input type="radio" id="star3" name="rating" value="3"/><label class="full" for="star3"
-                                                                                           title="Meh - 3 stars"></label>
-                            <input type="radio" id="star2half" name="rating" value="2 and a half"/><label class="half"
-                                                                                                          for="star2half"
-                                                                                                          title="Kinda bad - 2.5 stars"></label>
-                            <input type="radio" id="star2" name="rating" value="2"/><label class="full" for="star2"
-                                                                                           title="Kinda bad - 2 stars"></label>
-                            <input type="radio" id="star1half" name="rating" value="1 and a half"/><label class="half"
-                                                                                                          for="star1half"
-                                                                                                          title="Meh - 1.5 stars"></label>
-                            <input type="radio" id="star1" name="rating" value="1"/><label class="full" for="star1"
-                                                                                           title="Sucks big time - 1 star"></label>
-                            <input type="radio" id="starhalf" name="rating" value="half"/><label class="half"
-                                                                                                 for="starhalf"
-                                                                                                 title="Sucks big time - 0.5 stars"></label>
-                        </fieldset>
+        <h2 class="title">
+            Shop Zealous
+        </h2>
+        <div class="shop-container">
+            <aside>
+                <!--                <div class="dropdown">-->
+                <!--                    <label for="dropdown-1" class="btn-dropdown">-->
+                <!--                        <span>Filter by:</span>-->
+                <!--                    </label>-->
+                <!--                    <input class="dropdown-open" type="checkbox" id="dropdown-1" aria-hidden="true" hidden="">-->
+                <!--                    <label for="dropdown-1" class="dropdown-overlay"></label>-->
+                <!--                    <ul class="dropdown-inner">-->
+                <!--                        <li>-->
+                <!--                            <a href=#">-->
+                <!--                                Lorem ipsum-->
+                <!--                            </a>-->
+                <!--                        </li>-->
+                <!--                        <li>-->
+                <!--                            <a href=#">-->
+                <!--                                Lorem ipsum-->
+                <!--                            </a>-->
+                <!--                        </li>-->
+                <!--                        <li>-->
+                <!--                            <a href=#">-->
+                <!--                                Lorem ipsum-->
+                <!--                            </a>-->
+                <!--                        </li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+                <div class="form-group  select-list">
+                    <!--                    <label>Filter by:</label>-->
+                    <select class="custom-select select-car-type" placeholder="Filter by:">
+                        <option value="option"> Lorem ipsum-1</option>
+                        <option value="option"> Lorem ipsum-2</option>
+                        <option value="option"> Lorem ipsum-3</option>
+                    </select>
+                </div>
+            </aside>
+            <div class="shop-main-container">
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
                     </div>
                 </div>
-                <h2 class="pilot-details-title">About</h2>
-                <p class="pilot-description">
-                    Simon undergone his flight training at our "Sunrise" flight center in Central Florida. He has
-                    achieved from Zero to CPL in under 10 months. Simon undergone his flight training at our
-                    "Sunrise" flight center in Central Florida. He has achieved from Zero to CPL in under 10 months.
-                    Simon undergone his flight training at our "Sunrise" flight center in Central Florida. He has
-                    achieved from Zero to CPL in under 10 months. Simon undergone his flight training at our
-                    "Sunrise" flight center in Central Florida. He has achieved from Zero to CPL in under 10 months.
-                </p>
-                <div class="social-list">
-                    <a href="#">
-                        <img src="images/instagram-icon.svg" alt="icon">
-                    </a>
-                    <a href="#">
-                        <img src="images/fb-icon.svg" alt="icon">
-                    </a>
-                    <a href="#">
-                        <img src="images/linkendin-icon.svg" alt="icon">
-                    </a>
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="images/product-item.svg" alt="product-item" class="img-fluid">
+                    <div class="product-details">
+                        <h2 class="product-title">
+                            Lorem ipsum
+                        </h2>
+                        <p class="product-description">
+                            Lorem ipsum lorem ipsum lorem ipsum lorem
+                        </p>
+                        <p class="product-price">
+                            25.99 $
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="pilot-info-banner row">
-            <div class="pilot-info-left">
-                <div>
-                    <h2 class="main-title">Certificate Type:</h2>
-                    <ul class="info-type-list">
-                        <li>
-                            SPORT PILOT
-                        </li>
-                        <li>
-                            FLIGHT INSTRUCTOR
-                        </li>
-                        <li>
-                            AIRLINE TRANSPORT PILOT
-                        </li>
-                    </ul>
-                    <ul class="info-type-list">
-                        <li>
-                            COMMERCIAL PILOT
-                        </li>
-                        <li>
-                            FLIGHT INSTRUCTOR
-                        </li>
-                        <li>
-                            AIRLINE TRANSPORT PILOT
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pilot-info-right">
-                <img src="images/icon1.png" alt="icon">
-                <div>
-                    <h2 class="main-title">
-                        Pilot licence:
-                    </h2>
-                    <p>
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="pilot-career-banner">
-            <div class="pilot-career-banner-left">
-                <h2 class="main-title">Career Goal</h2>
-                <p>
-                    Don't be put off by the lack of females in the role, just go for it. I have never come across any
-                    negative attitudes from people I work alongside, even if it is a male-centric profession.
-                </p>
-            </div>
-            <div class="pilot-career-banner-right">
-                <a href="mailto:name@email.com" class="message-icon">
-                    Send Message
-                </a>
-                <a href="#" class="req-icon">
-                    Flight requests?
-                </a>
-            </div>
+
         </div>
     </div>
-
     <!-------------------------------------------end middle-section----------------------------------->
     <!---------------------------------------------start footer------------------------------------>
     <footer>
